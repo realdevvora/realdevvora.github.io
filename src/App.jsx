@@ -5,6 +5,7 @@ import Projects from './Projects'
 import Skills from './Skills'
 import Involvement from "./Involvement"
 import Footer from "./Footer"
+import About from './About'
 
 function App() {
 
@@ -12,13 +13,16 @@ function App() {
     <div style={{ scrollBehavior: 'smooth' }}>
       <Header/>
       <Hero/>
-      <div id="nextSection1" className="min-h-screen">
-        <Projects/>
+      <div id="nextSection1" className="min-h-screen bg-orange-300 align-middle">
+        <About/>
       </div>
       <div id="nextSection2" className="min-h-screen">
-        <Skills/>
+        <Projects/>
       </div>
       <div id="nextSection3" className="min-h-screen">
+        <Skills/>
+      </div>
+      <div id="nextSection4" className="min-h-screen">
         <Involvement/>
       </div>
       <Footer/>

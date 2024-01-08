@@ -22,21 +22,26 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
-  const scrollToProjects = () => {
+  const scrollToAbout = () => {
     document.getElementById('nextSection1').scrollIntoView({
       behavior: 'smooth',
     });
   };
 
-  const scrollToSkills = () => {
+  const scrollToProjects = () => {
     document.getElementById('nextSection2').scrollIntoView({
       behavior: 'smooth',
     });
   };
 
-  const scrollToInvolvement = () => {
+  const scrollToSkills = () => {
     document.getElementById('nextSection3').scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
+  const scrollToInvolvement = () => {
+    document.getElementById('nextSection4').scrollIntoView({
       behavior: 'smooth',
     });
   };
@@ -52,6 +57,9 @@ export default function Header() {
             Dev Vora
           </span>
           <div className="flex items-center space-x-6 rtl:space-x-reverse">
+            <a onClick={scrollToAbout} className="text-sm text-gray-500 dark:text-white hover:underline">
+              About
+            </a>
             <a onClick={scrollToProjects} className="text-sm text-gray-500 dark:text-white hover:underline">
               Projects
             </a>
