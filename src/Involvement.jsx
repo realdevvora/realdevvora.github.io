@@ -1,7 +1,7 @@
 export default function Involvement() {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center pt-20">
-        <div className="max-w-3xl mx-auto">
+      <div className="min-h-screen flex flex-col items-center justify-center pt-20 p-40">
+        <div className=" mx-auto">
           <div className="mb-12">
             <h2 className="text-2xl font-semibold mb-4">Teaching Assistant</h2>
             <ul className="list-disc list-inside">

@@ -15,7 +15,7 @@ export default function Skills() {
   );
 
   return (
-    <div className="flex-grow bg-blue-900 p-8 min-h-screen text-white pt-20">
+    <div className="flex-grow bg-blue-900 p-40 min-h-screen text-white pt-20">
       <div className="container mx-auto">
         <h1 className="text-4xl font-bold mb-8">Skills</h1>
         <div className="flex flex-col space-y-8">
