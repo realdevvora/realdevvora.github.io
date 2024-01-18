@@ -3,53 +3,23 @@ export default function FirstMessage() {
         <>
         <h1 className="font-bold text-5xl mb-2 font-serif flex justify-center">
           <div className="hover:-translate-y-10 duration-500">
-            H
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            i
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            !
+            Hi!
           </div>
           <div className="pl-3 hover:-translate-y-10 duration-500">
-            m
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            y
+            my
           </div>
         </h1>
         <h1 className="font-bold text-5xl mb-2 font-serif flex justify-center">
         <div className="hover:-translate-y-10 duration-500">
-            n
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            a
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            m
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            e
+            name
           </div>
           <div className="pl-3 hover:-translate-y-10 duration-500">
-            i
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            s
+            is
           </div>
         </h1>
         <h1 className="font-bold text-5xl mb-2 font-serif flex justify-center">
             <div className="hover:-translate-y-10 duration-500">
-            D
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            e
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            v
-          </div>
-          <div className="hover:-translate-y-10 duration-500">
-            !
+            Dev!
           </div>
         </h1>
         </>

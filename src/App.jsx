@@ -13,7 +13,7 @@ function App() {
     <div style={{ scrollBehavior: 'smooth' }}>
       <Header/>
       <Hero/>
-      <div id="nextSection1" className="min-h-screen bg-orange-300 align-middle">
+      <div id="nextSection1" className="min-h-screen align-middle">
         <About/>
       </div>
       <div id="nextSection2" className="min-h-screen">

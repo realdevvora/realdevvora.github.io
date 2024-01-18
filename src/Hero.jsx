@@ -20,7 +20,7 @@ export default function Hero() {
       <img
         src="/project pfp.jpeg"
         alt="Picture of me"
-        className="max-w-64 border-4 border-orange-300 rounded-full ml-4"
+        className="max-w-64 border-4 border-orange-300 rounded-full ml-4 shadow-2xl bg-white"
       />
     </div>
   );
