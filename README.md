@@ -1,1 +1,5 @@
-# website-2.0
+# Dev's Website
+
+Created using
+- React - HTML & CSS
+- Sass
