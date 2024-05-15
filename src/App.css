@@ -7,8 +7,39 @@
   box-sizing: border-box;
 }
 
+.logo-group {
+  height: 60px;
+  width: 150px;
+  position: fixed;
+  background-color: lightblue;
+  top: 20px;
+  right: 20px;
+  border-radius: 25px;
+}
+
+.logo {
+  width: 48px;
+  position: fixed;
+  transition: opacity 0.5s;
+}
+#github {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+}
+#linkedin {
+  position: absolute;
+  top: 5px;
+  left: 20px;
+}
+
+.logo:hover {
+  opacity: 50%;
+}
+
 .hero {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
@@ -106,7 +137,6 @@
 /* Other entries */
 .activities {
   margin-top: 100px;
-  height: 300px;
   display: none;
   width: 100%;
   justify-content: space-around;
@@ -125,10 +155,11 @@
   height: 300px;
   cursor: pointer;
   width: 300px;
-  background-color: navy;
+  background-color: rgb(0, 0, 62);
   border: none;
   border-radius: 100%;
   transition: 1000ms ease;
+  background-size: 300px;
 }
 
 .section-button:hover, .section-button:focus-visible {
@@ -164,6 +195,8 @@
   display: none;
   height: 200px;
   border-radius: 100%;
+  border-style: solid;
+  border-color: black;
   
   animation-duration: 1s;
   animation-name: fade-in;
@@ -183,10 +216,19 @@
   animation-fill-mode: forwards;
 }
 
+.activities-initiatives-timeline {
+  display: none;
+  position: fixed;
+  width: 500px;
+  bottom: 300px;
+}
+
 .activities-initiatives-img {
   display: none;
   height: 200px;
   border-radius: 100%;
+  border-style: solid;
+  border-color: black;
 
   animation-duration: 1s;
   animation-name: fade-in;
@@ -208,14 +250,15 @@
 
 .activities-projects-img {
   display: none;
+  width: 200px;
   height: 200px;
   border-radius: 100%;
+  transition: opacity 0.4s ease-out; /* Added transition property */
+}
 
-  animation-duration: 1s;
-  animation-name: fade-in;
-  animation-timing-function: ease-out;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+.activities-projects-img:hover {
+  opacity: 0.6;
+  cursor: pointer;
 }
 
 .activities-projects-description {
@@ -284,4 +327,95 @@
     transform: translateY(-60px);
     left: 100%;
   }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .section-button {
+    height: 150px;
+    width: 150px;
+    background-size: 150px;
+  }
+
+  .activities-about-img {
+    height: 150px;
+  }
+
+  .activities-initiatives-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .activities-projects-img {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .activities {
+    flex-direction: column;
+  }
+  .section-button {
+    height: 150px;
+    width: 150px;
+    background-size: 150px;
+    margin-bottom: 10px;
+  }
+  .section-button:hover, .section-button:focus-visible {
+    transform: translateX(-1.75rem);
+    background-color: rgb(0, 0, 190);
+    transition: transform 250ms;
+  }
+
+  .activities-about-img {
+    height: 150px;
+  }
+
+  .activities-initiatives-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .activities-projects-img {
+    height: 150px;
+    width: 150px;
+  }
+  .hero {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-title {
+    align-items: center;
+    font-size: x-large;
+  }
+  .hero-message {
+    font-size: large;
+  }
+  .hero-button {
+    font-size: small;
+  }
+
+  .hero-text {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+  }
+
+
+  @keyframes rise {
+    100% {
+      transform: translateY(-30px);
+    }
+  }
+
+  .hero-message {
+    font-size: large;
+  }
+  .hero-button {
+    width: 50%;
+  }
+
 }

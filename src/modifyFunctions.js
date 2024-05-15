@@ -6,6 +6,9 @@ function modifyAbout() {
         for (let i = 0; i < about.length; i++) {
           about[i].style.display = "none";
         }
+
+        const clicked = document.getElementById("about");
+        clicked.innerHTML = "About";
     
         const sectionButtons = document.getElementsByClassName("section-button")
         for (let i = 0; i < sectionButtons.length; i++) {
@@ -19,6 +22,9 @@ function modifyAbout() {
     for (let i = 0; i < about.length; i++) {
       about[i].style.display = "block";
     }
+
+    const clicked = document.getElementById("about");
+    clicked.innerHTML = "(Close About)";
 
     const initiatives = document.getElementsByClassName("activities-initiatives")
     for (let i = 0; i < initiatives.length; i++) {
@@ -40,6 +46,10 @@ function modifyInitiatives() {
         for (let i = 0; i < currentInitiatives.length; i++) {
           currentInitiatives[i].style.display = "none";
         }
+
+
+        const clicked = document.getElementById("initiatives");
+        clicked.innerHTML = "Current Initiatives";
     
         const sectionButtons = document.getElementsByClassName("section-button")
         for (let i = 0; i < sectionButtons.length; i++) {
@@ -53,6 +63,9 @@ function modifyInitiatives() {
     for (let i = 0; i < currentInitiatives.length; i++) {
       currentInitiatives[i].style.display = "block";
     }
+
+    const clicked = document.getElementById("initiatives");
+    clicked.innerHTML = "(Close Initiatives)"
 
     const about = document.getElementsByClassName("activities-about")
     for (let i = 0; i < about.length; i++) {
@@ -74,6 +87,10 @@ function modifyProjects() {
         for (let i = 0; i < currentProjects.length; i++) {
           currentProjects[i].style.display = "none";
         }
+
+
+        const clicked = document.getElementById("projects");
+        clicked.innerHTML = "Projects";
     
         const sectionButtons = document.getElementsByClassName("section-button")
         for (let i = 0; i < sectionButtons.length; i++) {
@@ -87,6 +104,10 @@ function modifyProjects() {
     for (let i = 0; i < currentProjects.length; i++) {
       currentProjects[i].style.display = "block";
     }
+
+
+    const clicked = document.getElementById("projects");
+    clicked.innerHTML = "(Close Projects)";
 
     const about = document.getElementsByClassName("activities-about")
     for (let i = 0; i < about.length; i++) {
